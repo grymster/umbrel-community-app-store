@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: grymster-torrserver
+name: TorrServer
+tagline: A torrent streaming server
+icon: https://raw.githubusercontent.com/grymster/grymster-umbrel-app-store/refs/heads/master/torrserver/logo.png
+category: media
+version: "MatriX.136"
+port: 8090
+description: >-
+  TorrServer is a program that allows users to view torrents online without the need for preliminary file downloading. The core functionality of TorrServer includes caching torrents and subsequent data transfer via the HTTP protocol, allowing the cache size to be adjusted according to the system parameters and the user's internet connection speed.
+developer: YouROK
+website: https://yourok.ru/
+submitter: grymster
+submission: https://github.com/getumbrel/umbrel-apps/pull/
+repo: https://github.com/YouROK/TorrServer
+support: https://github.com/YouROK/TorrServer/issues
+gallery:
+  - https://raw.githubusercontent.com/grymster/grymster-umbrel-app-store/refs/heads/master/torrserver/ts.png
+releaseNotes: >-
+  This version introduces several functional improvements.
+dependencies:
+path: ""
+defaultUsername: ""
+defaultPassword: ""
