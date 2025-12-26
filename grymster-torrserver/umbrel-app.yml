@@ -2,7 +2,7 @@ manifestVersion: 1
 id: grymster-torrserver
 name: TorrServer
 tagline: A torrent streaming server
-icon: https://raw.githubusercontent.com/grymster/umbrel-community-app-store/refs/heads/main/torrserver/logo.png
+icon: https://raw.githubusercontent.com/grymster/umbrel-community-app-store/refs/heads/main/grymster-torrserver/logo.png
 category: media
 version: "MatriX.136"
 port: 8090
@@ -15,7 +15,7 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/YouROK/TorrServer
 support: https://github.com/YouROK/TorrServer/issues
 gallery:
-  - https://raw.githubusercontent.com/grymster/umbrel-community-app-store/refs/heads/main/torrserver/ts.png
+  - https://raw.githubusercontent.com/grymster/umbrel-community-app-store/refs/heads/main/grymster-torrserver/ts.png
 releaseNotes: >-
   This version introduces several functional improvements.
 dependencies:
