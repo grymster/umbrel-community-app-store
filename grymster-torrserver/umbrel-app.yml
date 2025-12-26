@@ -5,7 +5,7 @@ tagline: A torrent streaming server
 icon: https://raw.githubusercontent.com/grymster/umbrel-community-app-store/refs/heads/main/grymster-torrserver/logo.png
 category: media
 version: "MatriX.137"
-port: 5665
+port: 8090
 description: >-
   TorrServer is a program that allows users to view torrents online without the need for preliminary file downloading. The core functionality of TorrServer includes caching torrents and subsequent data transfer via the HTTP protocol, allowing the cache size to be adjusted according to the system parameters and the user's internet connection speed.
 developer: YouROK
