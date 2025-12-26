@@ -3,13 +3,13 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: grymster-torrserver_web_1
-      APP_PORT: 8090
-  web:
+      APP_HOST: grymster-torrserver_app_1
+      APP_PORT: 8091
+  app:
     image: ghcr.io/yourok/torrserver:MatriX.137@sha256:cc019c7735bd717930c05cbc4e0c3a9f2a1e1dc4f83ddf72e9f4f01674b085d6
     network_mode: host
     environment:
-      TS_PORT: "8090"
+      TS_PORT: "8091"
       TS_DONTKILL: "1"
       TS_HTTPAUTH: "0"
       TS_CONF_PATH: /opt/torrserver
@@ -17,6 +17,4 @@ services:
       TS_LOG_PATH: /opt/torrserver
     volumes:
       - ${APP_DATA_DIR}/data:/opt/torrserver
-    ports:
-      - 8090:8090
 
