@@ -10,6 +10,7 @@ services:
     restart: unless-stopped
     environment:
       TS_PORT: "8090"
+      TS_DONTKILL: "1"
       TS_HTTPAUTH: "0"
       TS_CONF_PATH: /opt/torrserver/config
       TS_TORR_DIR: /opt/torrserver/torrents
