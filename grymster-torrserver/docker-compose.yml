@@ -5,6 +5,7 @@ services:
     environment:
       APP_HOST: grymster-torrserver_app_1
       APP_PORT: 8090
+      PROXY_AUTH_ADD: "false"
   app:
     image: ghcr.io/yourok/torrserver:MatriX.137@sha256:cc019c7735bd717930c05cbc4e0c3a9f2a1e1dc4f83ddf72e9f4f01674b085d6
     user: "1000:1000"
