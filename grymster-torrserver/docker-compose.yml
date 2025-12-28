@@ -7,13 +7,14 @@ services:
       APP_PORT: 8090
   app:
     image: ghcr.io/yourok/torrserver:MatriX.137@sha256:cc019c7735bd717930c05cbc4e0c3a9f2a1e1dc4f83ddf72e9f4f01674b085d6
-    restart: unless-stopped
     environment:
       TS_PORT: "8090"
       TS_DONTKILL: "1"
       TS_HTTPAUTH: "0"
       TS_CONF_PATH: /opt/torrserver/config
       TS_TORR_DIR: /opt/torrserver/torrents
+    ports:
+      - "8090:8090"
     volumes:
       - ${APP_DATA_DIR}/data/config:/opt/torrserver/config
       - ${APP_DATA_DIR}/data/torrents:/opt/torrserver/torrents
