@@ -1,0 +1,30 @@
+﻿id: grymster-digibyte-solo
+name: DigiByte SHA256 SOLO Pool
+version: "0.1.0"
+category: Mining
+tagline: Solo mining DigiByte (SHA256) with Web UI
+icon: logo.png
+port: 7333
+
+
+description: >-
+  SHA256-ASIC only participates in 1 in 5 blocks.
+  That's fine, but luck x5 is worse than it seems.  
+
+services:
+- digibyte
+- nomp
+
+
+requirements:
+- docker
+
+
+devices:
+- amd64
+- arm64
+
+
+website: https://digibyte.org
+source: https://github.com/zone117x/node-stratum-pool
+support: https://github.com/digibyte-core

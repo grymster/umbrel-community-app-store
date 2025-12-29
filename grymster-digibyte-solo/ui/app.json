@@ -1,0 +1,36 @@
+{
+  "name": "DigiByte SOLO Pool",
+  "sections": [
+    {
+      "title": "Web Interface",
+      "content": [
+        {
+          "type": "text",
+          "value": "The pool UI is protected by Umbrel authentication."
+        },
+        {
+          "type": "link",
+          "text": "Open Pool UI",
+          "url": "/proxy/8080/"
+        }
+      ]
+    },
+    {
+      "title": "Mining",
+      "content": [
+        {
+          "type": "text",
+          "value": "Stratum URL:"
+        },
+        {
+          "type": "code",
+          "value": "stratum+tcp://<umbrel-ip>:7333"
+        },
+        {
+          "type": "text",
+          "value": "Username = DGB_ADDRESS.worker"
+        }
+      ]
+    }
+  ]
+}

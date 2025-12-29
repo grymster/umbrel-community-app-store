@@ -1,0 +1,39 @@
+{
+  "name": "DigiByte",
+  "symbol": "DGB",
+  "algorithm": "sha256",
+  "reward": 690,
+  "txfee": 0,
+
+  "peerMagic": "fac3b6da",
+  "peerMagicTestnet": "fac3b6db",
+
+  "ports": {
+    "7333": {
+      "diff": 65536,
+      "varDiff": {
+        "minDiff": 16384,
+        "maxDiff": 1048576,
+        "targetTime": 15,
+        "retargetTime": 90
+      }
+    }
+  },
+
+  "daemons": [
+    {
+      "host": "digibyte",
+      "port": 14022,
+      "user": "digibrpc",
+      "password": "digibrpc"
+    }
+  ],
+
+  "paymentProcessing": {
+    "enabled": false
+  },
+  
+  "soloMining": {
+    "enabled": true
+  }
+}

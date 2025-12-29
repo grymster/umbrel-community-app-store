@@ -1,0 +1,25 @@
+﻿version: "3.8"
+
+services:
+  digibyte:
+    image: digibyte/digibyte:latest
+    user: "1000:1000"
+    container_name: digibyte
+    volumes:
+      - ./digibyte:/home/digibyte/.digibyte
+    ports:
+      - "12024:12024" # P2P
+    restart: unless-stopped
+
+  nomp:
+    image: ghcr.io/tuaris/node-stratum-pool:latest
+    user: "1000:1000"
+    container_name: nomp
+    depends_on:
+      - digibyte
+    volumes:
+      - ./nomp:/nomp/config
+    ports:
+      - "7333:7333" # Stratum
+      - "8080:8080" # Web UI
+    restart: unless-stopped
