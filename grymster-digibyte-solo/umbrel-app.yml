@@ -3,7 +3,7 @@ id: grymster-digibyte-solo
 name: DigiByte SHA256 SOLO Pool
 tagline: A torrent streaming server
 icon: https://raw.githubusercontent.com/grymster/umbrel-community-app-store/refs/heads/main/grymster-torrserver/logo.png
-category: media
+category: Mining
 version: "0.1.0"
 port: 7333
 description: >-
