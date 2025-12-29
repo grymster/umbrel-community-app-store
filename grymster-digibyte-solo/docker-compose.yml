@@ -1,16 +1,13 @@
-﻿version: "3.8"
-
-services:
+﻿services:
   digibyte:
-    image: digibyte/digibyte:latest
+    image: ghcr.io/grymster/digibyte-core:latest
     user: "1000:1000"
     container_name: digibyte
     volumes:
-      - ./digibyte:/home/digibyte/.digibyte
+      - ./data/digibyte:/data
     ports:
       - "12024:12024"   # P2P сеть
       - "14022:14022"   # RPC
-      - "27332:27332"   # ZMQ
     restart: unless-stopped
 
   nomp:
@@ -20,7 +17,7 @@ services:
     depends_on:
       - digibyte
     volumes:
-      - ./nomp:/nomp/config
+      - ./data/nomp:/nomp
     ports:
       - "3333:3333" # Stratum
       - "8080:8080" # Web UI
