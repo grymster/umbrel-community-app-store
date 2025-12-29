@@ -3,7 +3,7 @@ name: DigiByte SHA256 SOLO Pool
 version: "0.1.0"
 category: Mining
 tagline: Solo mining DigiByte (SHA256) with Web UI
-icon: logo.png
+icon: https://raw.githubusercontent.com/grymster/umbrel-community-app-store/refs/heads/main/grymster-digibyte-solo/logo.png
 port: 7333
 
 
