@@ -14,7 +14,7 @@ services:
     restart: unless-stopped
 
   nomp:
-    image: ghcr.io/tuaris/node-stratum-pool:latest
+    image: ghcr.io/grymster/node-stratum-pool:latest
     user: "1000:1000"
     container_name: nomp
     depends_on:
@@ -22,6 +22,6 @@ services:
     volumes:
       - ./nomp:/nomp/config
     ports:
-      - "7333:7333" # Stratum
+      - "3333:3333" # Stratum
       - "8080:8080" # Web UI
     restart: unless-stopped

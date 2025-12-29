@@ -24,7 +24,7 @@
         },
         {
           "type": "code",
-          "value": "stratum+tcp://<umbrel-ip>:7333"
+          "value": "stratum+tcp://<umbrel-ip>:3333"
         },
         {
           "type": "text",

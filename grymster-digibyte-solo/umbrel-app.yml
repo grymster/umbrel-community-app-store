@@ -1,11 +1,11 @@
 ﻿manifestVersion: 1
 id: grymster-digibyte-solo
 name: DigiByte SHA256 SOLO Pool
-tagline: Full solution for DigiByte SHA256 Solo mining.
+tagline: Full solution for DigiByte SHA256 Solo mining
 icon: https://raw.githubusercontent.com/grymster/umbrel-community-app-store/refs/heads/main/grymster-digibyte-solo/logo.png
 category: Mining
 version: "0.1.0"
-port: 7333
+port: 3333
 description: >-
   SHA256-ASIC only participates in 1 in 5 blocks.
   That's fine, but luck x5 is worse than it seems. 

@@ -9,7 +9,7 @@
   "peerMagicTestnet": "fac3b6db",
 
   "ports": {
-    "7333": {
+    "3333": {
       "diff": 0.001,
       "varDiff": {
         "minDiff": 0.001,
