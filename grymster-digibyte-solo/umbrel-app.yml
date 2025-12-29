@@ -1,30 +1,25 @@
-﻿id: grymster-digibyte-solo
+﻿manifestVersion: 1
+id: grymster-digibyte-solo
 name: DigiByte SHA256 SOLO Pool
+tagline: A torrent streaming server
+icon: https://raw.githubusercontent.com/grymster/umbrel-community-app-store/refs/heads/main/grymster-torrserver/logo.png
+category: media
 version: "0.1.0"
-category: Mining
-tagline: Solo mining DigiByte (SHA256) with Web UI
-icon: https://raw.githubusercontent.com/grymster/umbrel-community-app-store/refs/heads/main/grymster-digibyte-solo/logo.png
 port: 7333
-
-
 description: >-
   SHA256-ASIC only participates in 1 in 5 blocks.
-  That's fine, but luck x5 is worse than it seems.  
-
-services:
-- digibyte
-- nomp
-
-
-requirements:
-- docker
-
-
-devices:
-- amd64
-- arm64
-
-
+  That's fine, but luck x5 is worse than it seems. 
+developer: grymster
 website: https://digibyte.org
-source: https://github.com/zone117x/node-stratum-pool
-support: https://github.com/digibyte-core
+submitter: grymster
+submission: https://github.com/getumbrel/umbrel-apps/pull/
+repo: https://github.com/DigiByte-Core/digibyte
+support: https://github.com/DigiByte-Core/digibyte/issues
+gallery:
+  - https://raw.githubusercontent.com/grymster/umbrel-community-app-store/refs/heads/main/grymster-digibyte-solo/gallery.png
+releaseNotes: >-
+  Initial release.
+dependencies:
+path: ""
+defaultUsername: ""
+defaultPassword: ""
