@@ -8,7 +8,9 @@ services:
     volumes:
       - ./digibyte:/home/digibyte/.digibyte
     ports:
-      - "12024:12024" # P2P
+      - "12024:12024"   # P2P сеть
+      - "14022:14022"   # RPC
+      - "27332:27332"   # ZMQ
     restart: unless-stopped
 
   nomp:
