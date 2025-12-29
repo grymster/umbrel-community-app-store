@@ -3,7 +3,7 @@
     image: ghcr.io/grymster/digibyte-core:latest
     container_name: digibyte
     volumes:
-      - ./data/digibyte:/data
+      - ${APP_DATA_DIR}/data/digibyte:/data
     ports:
       - "12024:12024"   # P2P сеть
       - "14022:14022"   # RPC
@@ -15,7 +15,7 @@
     depends_on:
       - digibyte
     volumes:
-      - ./data/nomp:/nomp
+      - ${APP_DATA_DIR}/data/nomp:/nomp
     ports:
       - "3333:3333" # Stratum
       - "8080:8080" # Web UI
