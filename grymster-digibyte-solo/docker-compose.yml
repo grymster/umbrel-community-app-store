@@ -1,4 +1,4 @@
-﻿services:
+services:
   digibyte:
     image: ghcr.io/grymster/digibyte-core:latest
     container_name: digibyte
