@@ -1,0 +1,29 @@
+{
+    "name": "DigiByte",
+    "symbol": "DGB",
+    "algorithm": "sha256",
+    "peerMagic": "fac3b6da",
+    "peerMagicTestnet": "fdc2b6da",
+    "txMessages": true,
+    "bech32": "dgb",
+    "segwit": true,
+    "version_group_id": "DigiByte",
+    "addressTypes": {
+        "prod": ["1e", "3f", "00"],
+        "testnet": ["6f", "c4", "00"]
+    },
+    "client": {
+        "type": "DigiByte Core"
+    },
+    "explorer": {
+        "block": "https://digiexplorer.info/block/",
+        "tx": "https://digiexplorer.info/tx/",
+        "address": "https://digiexplorer.info/address/"
+    },
+    "rpc": {
+        "host": "digibyte-core",
+        "port": 14022,
+        "user": "digibrpc",
+        "password": "digibrpc"
+    }
+}

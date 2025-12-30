@@ -1,22 +1,32 @@
 services:
   digibyte:
     image: ghcr.io/grymster/digibyte-core:latest
-    container_name: digibyte
+    container_name: digibyte-core
     volumes:
       - ${APP_DATA_DIR}/data/digibyte:/data
     ports:
-      - "12024:12024"   # P2P сеть
+      - "12024:12024"   # P2P
       - "14022:14022"   # RPC
     restart: unless-stopped
 
   nomp:
-    image: ghcr.io/grymster/node-stratum-pool:latest
-    container_name: nomp
+    image: ghcr.io/grymster/node-open-mining-portal:latest
+    container_name: digibyte-nomp
     depends_on:
       - digibyte
+      - redis
     volumes:
-      - ${APP_DATA_DIR}/nomp:/nomp
+      - ${APP_DATA_DIR}/data/nomp/config.json:/app/config.json:ro
+      - ${APP_DATA_DIR}/data/nomp/coins/digibyte.json:/app/coins/digibyte.json:ro
     ports:
       - "3333:3333" # Stratum
       - "8080:8080" # Web UI
     restart: unless-stopped
+
+  redis:
+    image: redis:7
+    container_name: digibyte-redis
+    restart: unless-stopped
+    volumes:
+      - redis-data:/data
+
