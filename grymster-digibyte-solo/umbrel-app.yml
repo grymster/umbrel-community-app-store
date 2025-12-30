@@ -5,7 +5,7 @@ tagline: DigiByte SHA256d Solo Node
 icon: https://raw.githubusercontent.com/grymster/umbrel-community-app-store/refs/heads/main/grymster-digibyte-solo/logo.png
 category: Mining
 version: "0.1.0"
-port: 14022
+port: 8080
 description: >-
   SHA256-ASIC only participates in 1 in 5 blocks.
   That's fine, but luck x5 is worse than it seems. 
