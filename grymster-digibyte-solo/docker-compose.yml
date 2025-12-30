@@ -15,7 +15,7 @@ services:
     depends_on:
       - digibyte
     volumes:
-      - ${APP_DATA_DIR}/data/nomp:/data
+      - ${APP_DATA_DIR}/nomp:/nomp
     ports:
       - "3333:3333" # Stratum
       - "8080:8080" # Web UI
