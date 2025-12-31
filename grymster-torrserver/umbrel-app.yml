@@ -1,6 +1,6 @@
 manifestVersion: 1
 id: grymster-torrserver
-name: TorrServer
+name: TorrServer MatriX.137 
 tagline: A torrent streaming server
 icon: https://raw.githubusercontent.com/grymster/umbrel-community-app-store/refs/heads/main/grymster-torrserver/logo.png
 category: media
