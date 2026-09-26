@@ -7,7 +7,7 @@ services:
       APP_PORT: 8090
       PROXY_AUTH_ADD: "false"
   app:
-    image: ghcr.io/yourok/torrserver:MatriX.143@sha256:9a6b95f5744af2fcff55c505891c737f22dd6e1d3d53269fc2268ef3382507d9
+    image: ghcr.io/yourok/torrserver:MatriX.145@sha256:d32d5de9472bc9847aee5c536d34885fdc9332b957d9fc2c707ea064932a583d
     user: "1000:1000"
     environment:
       TS_PORT: "8090"
